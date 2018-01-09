@@ -36,12 +36,12 @@ class Assignment{
 
 object Assignment extends App {
   val obj : Assignment = new Assignment
-  val testlist = List[Int](21,34,89,12,34,51)
-  val inputforrange = 15
-  val inputforfibonacci = 10
-  obj.showListWithIndex(testlist)
-  println(s"The Maximum In The List Is ${obj.showMaximum(testlist)}")
-  println(s"The Sum of Range : ${obj.calculateSumOfRange(inputforrange)}")
-  println(s"The Product of Range : ${obj.calculateProductOfRange(inputforrange)}")
-  println(s"The ${inputforfibonacci}th Fibonacci Number : ${obj.calculateFibonacci(inputforfibonacci)}")
+  val test_list = List[Int](21,34,89,12,34,51)
+  val input_for_range = 15
+  val input_for_fibonacci = 10
+  obj.showListWithIndex(test_list)
+  println(s"The Maximum In The List Is ${obj.showMaximum(test_list)}")
+  println(s"The Sum of Range : ${obj.calculateSumOfRange(input_for_range)}")
+  println(s"The Product of Range : ${obj.calculateProductOfRange(input_for_range)}")
+  println(s"The ${input_for_fibonacci}th Fibonacci Number : ${obj.calculateFibonacci(input_for_fibonacci)}")
 }
