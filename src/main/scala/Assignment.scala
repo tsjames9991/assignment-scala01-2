@@ -1,11 +1,11 @@
 class Assignment{
-  def showListWithIndex(numberlist: List[Int]): Unit ={
-    numberlist.foreach( number => println(s"${numberlist.indexOf(number)} = ${number}") )
+  def showListWithIndex(number_list: List[Int]): Unit ={
+    number_list.foreach( number => println(s"${number_list.indexOf(number)} = ${number}") )
   }
 
-  def showMaximum(numberlist: List[Int]): Int = {
-    val head = numberlist.head
-    val tail = numberlist.tail
+  def showMaximum(number_list: List[Int]): Int = {
+    val head = number_list.head
+    val tail = number_list.tail
     if(tail.isEmpty) head
     else{
       val temp = showMaximum(tail)
