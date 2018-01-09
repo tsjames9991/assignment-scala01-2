@@ -4,26 +4,27 @@ class Assignment{
   }
 
   def showMaximum(numberlist: List[Int]): Int = {
-    var maximum = numberlist(0)
-    numberlist.foreach {
-      temp => if(maximum < temp) {
-        maximum = temp}
+    val head = numberlist.head
+    val tail = numberlist.tail
+    if(tail.isEmpty) head
+    else{
+      val temp = showMaximum(tail)
+      if(head > temp) head else temp
     }
-    maximum
   }
 
   def calculateSumOfRange(n: Int): Int = {
-    val range = 1 to n
-    var sum = 0
-    for(i <- range) yield { sum = sum + i }
-    sum
+    if(n == 0)
+      0
+    else
+      n + calculateSumOfRange(n - 1)
   }
 
   def calculateProductOfRange(n: Int): Long = {
-    val range = 1 to n
-    var product: Long  = 1
-    for(i <- range) yield { product = product * i }
-    product
+    if(n == 1)
+      1
+    else
+      n * calculateProductOfRange(n - 1)
   }
 
   def calculateFibonacci(n: Int): Int = {
