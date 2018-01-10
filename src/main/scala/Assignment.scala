@@ -21,7 +21,7 @@ class Assignment {
   }
 
   def calculateProductOfRange(n: Int): Int = {
-    if (n == 1)
+    if (n == 1 || n == 0)
       1
     else
       n * calculateProductOfRange(n - 1)
