@@ -41,8 +41,8 @@ object Assignment extends App {
   val input_for_fibonacci = 4
   val temp = obj.calculateProductOfRange(input_for_range)
   obj.showListWithIndex(test_list)
-//  println(s"The Maximum In The List Is ${obj.showMaximum(test_list)}")
+  println(s"The Maximum In The List Is ${obj.showMaximum(test_list)}")
   println(s"The Sum of Digits : ${obj.calculateSumOfDigits(temp)}")
-//  println(s"The Product of Range : ${obj.calculateProductOfRange(input_for_range)}")
-//  println(s"The ${input_for_fibonacci}th Fibonacci Number : ${obj.calculateFibonacci(input_for_fibonacci)}")
+  println(s"The Product of Range : ${obj.calculateProductOfRange(input_for_range)}")
+  println(s"The ${input_for_fibonacci}th Fibonacci Number : ${obj.calculateFibonacci(input_for_fibonacci)}")
 }
